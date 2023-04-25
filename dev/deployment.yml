@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: weather_app
+  name: weather-app
   labels:
     app: weather_app
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
 
       containers:
-      - name: weather_app
+      - name: weather-app
         image: danieliko/kafka_python
         ports:
         - containerPort: 8000
