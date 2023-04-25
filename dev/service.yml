@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: weather_svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: weather_app
+  ports:
+    - name: weather_port
+      port: 8000
+      targetPort: 8000
